@@ -12,7 +12,7 @@ import screenshotSrc from "@/imports/screenshot.png";
 const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Recursos", href: "#recursos" },
   { label: "Como funciona", href: "#como-funciona" },
-  { label: "Contactos", href: "/contactos" },
+  { label: "Suporte", href: "/suporte" },
 ];
 
 const FEATURES = [

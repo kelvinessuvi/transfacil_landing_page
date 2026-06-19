@@ -11,7 +11,7 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/termos" element={<Termos />} />
         <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
-        <Route path="/contactos" element={<Contactos />} />
+        <Route path="/suporte" element={<Contactos />} />
       </Routes>
     </BrowserRouter>
   );

@@ -87,10 +87,34 @@ export default function Contactos() {
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-6 py-16">
-        <h1 className="font-display font-black text-4xl text-[#0D0D0D] mb-4">Contactos</h1>
+        <h1 className="font-display font-black text-4xl text-[#0D0D0D] mb-4">Suporte</h1>
         <p className="text-[#0D0D0D]/55 text-lg mb-10">
           Tem alguma dúvida, sugestão ou precisa de ajuda? Envie-nos uma mensagem.
         </p>
+
+        {/* FAQ */}
+        <section className="mb-14">
+          <h2 className="font-display font-bold text-2xl text-[#0D0D0D] mb-6">Perguntas Frequentes</h2>
+          <div className="space-y-4">
+            {[
+              { q: "Como faço para reservar uma viagem?", a: "Aceda ao separador \"Viagens\" na aplicação, escolha a rota e clique em \"Reservar\". Necessita de uma subscrição activa." },
+              { q: "Como activo a minha subscrição?", a: "Vá a \"Painel\" > \"Subscrição\", escolha um plano e faça o upload do comprovativo de pagamento. Após validação, a subscrição será activada." },
+              { q: "Como obtenho o código QR para embarque?", a: "Após aprovação da reserva, o QR Code será gerado automaticamente e estará disponível nos detalhes da viagem na aplicação." },
+              { q: "Posso cancelar uma reserva?", a: "Para cancelar uma reserva, contacte o suporte através do formulário abaixo ou envie um email para suporte@transfacil.app." },
+              { q: "Quais os métodos de pagamento aceites?", a: "Actualmente aceitamos transferência bancária. Após o pagamento, envie o comprovativo através da aplicação para validação." },
+            ].map((faq, i) => (
+              <details key={i} className="group border border-black/10 rounded-sm">
+                <summary className="cursor-pointer text-sm font-medium text-[#0D0D0D] px-5 py-4 list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                  {faq.q}
+                  <span className="text-black/30 text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="px-5 pb-4 text-sm text-[#0D0D0D]/60 leading-relaxed border-t border-black/5 pt-3">
+                  {faq.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
 
         <div className="max-w-xl">
           <div className="mb-10 p-5 bg-[#F5F1E8] border border-black/8 rounded-sm">
