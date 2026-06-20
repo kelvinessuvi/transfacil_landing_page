@@ -236,14 +236,14 @@ export default function Landing() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-3 mb-12">
               <a
-                href="#"
+                href="https://apps.apple.com/pt/app/transf%C3%A1cil/id6778940859"
                 className="flex items-center gap-3 bg-white text-[#0D0D0D] px-5 py-3.5 rounded-sm hover:bg-[#CCFF00] transition-all duration-200 font-bold text-sm group"
               >
                 <AppleIcon className="w-5 h-5" />
                 <span>App Store</span>
               </a>
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=app.transfacil"
                 className="flex items-center gap-3 bg-[#CCFF00] text-[#0D0D0D] px-5 py-3.5 rounded-sm hover:bg-[#CAFF40] transition-all duration-200 font-bold text-sm"
               >
                 <PlayIcon className="w-5 h-5" />
