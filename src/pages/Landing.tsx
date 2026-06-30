@@ -243,7 +243,7 @@ export default function Landing() {
                 <span>App Store</span>
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=app.transfacil"
+                href="https://drive.google.com/file/d/1shbrHzPsi5ZfmBnDL4p58-wlA9yKMcTf/view?usp=drive_link" //https://play.google.com/store/apps/details?id=app.transfacil
                 className="flex items-center gap-3 bg-[#CCFF00] text-[#0D0D0D] px-5 py-3.5 rounded-sm hover:bg-[#CAFF40] transition-all duration-200 font-bold text-sm"
               >
                 <PlayIcon className="w-5 h-5" />
